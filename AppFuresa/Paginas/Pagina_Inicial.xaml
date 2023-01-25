@@ -1,0 +1,37 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFuresa.Paginas.Pagina_Inicial">
+    <ContentPage.Content BackgroundColor="Black">
+        <Grid BackgroundColor="Black">
+
+            <Path Data="M 429.80746,564.03633 430.60414,922.19481 3.5342199,920.59469 0.25041994,561.05798 c 0,0 91.07162006,234.87167 218.32611006,85.86339 C 345.83102,497.91326 429.80746,564.0365 429.80746,564.0365 Z"
+                Opacity="0.5" Fill="black" Grid.ColumnSpan="1"/>
+
+            <Grid BackgroundColor="Black">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="200"/>
+                    <RowDefinition Height="300"/>
+                    <RowDefinition Height="5*"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="200"/>
+                    <ColumnDefinition Width="200*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+                <Image Source="logofurescreen" Aspect="AspectFit" Grid.ColumnSpan="2" Grid.RowSpan="2"/>
+
+                <Image Source="furelogo1.png"
+                       Aspect="AspectFit" 
+                       HorizontalOptions="StartAndExpand" 
+                       VerticalOptions="End"
+                       Grid.Column="1" Grid.RowSpan="3" />
+
+            </Grid>
+
+
+        </Grid>
+
+    </ContentPage.Content>
+</ContentPage>
