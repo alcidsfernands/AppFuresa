@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFuresa.TabPaginas.TabSCADA"
+            xmlns:Paginas="clr-namespace:AppFuresa.Paginas">
+  <!--Pages can be added as references or inline-->
+    <Paginas:BombasPage IconImageSource="icons_bombas.png" Title="BOMBA"/>
+    <Paginas:CompresorPage IconImageSource="icons_compresor.png" Title="COMPRESOR"/>
+    <Paginas:NitrogenioPage IconImageSource="icons_nitrogenio.png" Title="NITROGENIO"/>
+
+</TabbedPage>
