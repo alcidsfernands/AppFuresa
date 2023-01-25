@@ -9,15 +9,40 @@
                 
                 <StackLayout>
                     <Label WidthRequest="410" Background="black" Opacity="0.5" Text="PUERTA ENTRADA" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
-                    <shared:VideoView x:Name="CamPuertaPrincipal" WidthRequest="200" HeightRequest="350"/>
-                    <Button x:Name="btn_AbrirPuertaEntrada" Text="Abrir" Clicked="btn_AbrirPuertaEntrada_Clicked"/>
-                    <Button x:Name="btn_CerrarPuertaEntrada" Text="Cierrar" Clicked="btn_CerrarPuertaEntrada_Clicked"/>
-                    <Label Text="ESTADO" HorizontalOptions="Center"/>
+                    <shared:VideoView x:Name="CamPuertaPrincipal" WidthRequest="150" HeightRequest="250"/>
+
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="btn_conectarEntrada" Text="CONECTAR" Clicked="btn_conectarEntrada_Clicked"/>
+                        <Button x:Name="btn_AbrirPuertaEntrada" Text="Abrir" Clicked="btn_AbrirPuertaEntrada_Clicked"/>
+                        <Button x:Name="btn_CerrarPuertaEntrada" Text="Cierrar" Clicked="btn_CerrarPuertaEntrada_Clicked"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="Led_PuertaEntradaAbierta"  CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Puerta Abierta"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="Led_PuertaCerrada" CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Puerta Cerrada"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="Led_PuertaEntradaAbriendose"  CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Puerta Abriendose"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="Led_PuertaCerrandose" CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Puerta Cerrandose"/>
+                    </StackLayout>
+                    <StackLayout Orientation="Horizontal">
+                        <Button x:Name="Led_PuertaSensor" CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
+                        <Label Text="Sensor Optico"/>
+                    </StackLayout>
+
                 </StackLayout>
                 <StackLayout>
                     <Label WidthRequest="410" Background="black" Opacity="0.5" Text="PUERTA BASCULA" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
-                    <shared:VideoView x:Name="CamPuertaBascula" WidthRequest="200" HeightRequest="350"/>
-                    <Button x:Name="btn_AbrirPuertaBascula" Text="Abrir puerta" Clicked="btn_AbrirPuertaBascula_Clicked"/>
+                    <shared:VideoView x:Name="CamPuertaBascula" WidthRequest="150" HeightRequest="250"/>
+                    <Button x:Name="btn_conectarBascula" Text="CONECTAR" Clicked="btn_conectarBascula_Clicked"/>
+                    <Button x:Name="btn_AbrirPuertaBascula" Text="Abrir/Cerrar puerta" Clicked="btn_AbrirPuertaBascula_Clicked"/>
                 </StackLayout>
             </StackLayout>
         </ScrollView>
