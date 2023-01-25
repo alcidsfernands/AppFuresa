@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFuresa.Paginas.PuertasPage"
+             xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms">
+    <ContentPage.Content>
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                
+                <StackLayout>
+                    <Label WidthRequest="410" Background="black" Opacity="0.5" Text="PUERTA ENTRADA" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    <shared:VideoView x:Name="CamPuertaPrincipal" WidthRequest="200" HeightRequest="350"/>
+                    <Button x:Name="btn_AbrirPuertaEntrada" Text="Abrir" Clicked="btn_AbrirPuertaEntrada_Clicked"/>
+                    <Button x:Name="btn_CerrarPuertaEntrada" Text="Cierrar" Clicked="btn_CerrarPuertaEntrada_Clicked"/>
+                    <Label Text="ESTADO" HorizontalOptions="Center"/>
+                </StackLayout>
+                <StackLayout>
+                    <Label WidthRequest="410" Background="black" Opacity="0.5" Text="PUERTA BASCULA" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    <shared:VideoView x:Name="CamPuertaBascula" WidthRequest="200" HeightRequest="350"/>
+                    <Button x:Name="btn_AbrirPuertaBascula" Text="Abrir puerta" Clicked="btn_AbrirPuertaBascula_Clicked"/>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

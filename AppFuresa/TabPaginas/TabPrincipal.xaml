@@ -1,9 +1,15 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppFuresa.TabPaginas.TabPrincipal" BarBackgroundColor="Chocolate" BarTextColor="Azure">
+             xmlns:Paginas="clr-namespace:AppFuresa.Paginas"
+             x:Class="AppFuresa.TabPaginas.TabPrincipal" BarBackgroundColor="Chocolate" BarTextColor="Azure"
+            xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
+            android:TabbedPage.ToolbarPlacement="Bottom">
   <!--Pages can be added as references or inline-->
-  <ContentPage Title="Tab 1" />
-  <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
+
+    <Paginas:PuertasPage IconImageSource="gate" Title="PUERTAS"/>
+    <Paginas:ScadaPage IconImageSource="desktop" Title="SCADA"/>
+    <Paginas:cctvPage IconImageSource="cctv" Title="CCTV"/>
+    <Paginas:MantenimientoPage IconImageSource="mantenimiento" Title="MANTENIMIENTO"/>
+
 </TabbedPage>
