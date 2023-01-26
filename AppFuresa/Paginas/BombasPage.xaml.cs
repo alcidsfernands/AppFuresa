@@ -53,10 +53,10 @@ namespace AppFuresa.Paginas
 
                         List<string> Alarm = new List<string>();
 
-                        tempB2.Text = S7.GetRealAt(ReceberDatos_Bombas, 22).ToString();
-                        horasB1.Text = S7.GetDWordAt(ReceberDatos_Bombas, 8).ToString();
+                        tempB2.Text = S7.GetRealAt(ReceberDatos_Bombas, 22).ToString()+" ºC";
+                        horasB1.Text = S7.GetDWordAt(ReceberDatos_Bombas, 8).ToString() + " H";
                         tempB1.Text = tempB2.Text;
-                        horasB2.Text = S7.GetDWordAt(ReceberDatos_Bombas, 16).ToString();
+                        horasB2.Text = S7.GetDWordAt(ReceberDatos_Bombas, 16).ToString() + " H";
 
 
                         bool Seleccion_B1 = S7.GetBitAt(ReceberDatos_Bombas, 0, 0);
@@ -114,9 +114,13 @@ namespace AppFuresa.Paginas
                         if (En_marcha_B1)
                         {
                             EstadoB1.Text = "Em Marcha";
-
+                            b1.Source = ImageSource.FromFile("pump_on1.png");
                         }
-                        else EstadoB1.Text = "Parado";
+                        else
+                        {
+                            b1.Source = ImageSource.FromFile("pump_off.png");
+                            EstadoB1.Text = "Parado";
+                        }
 
                         if (alarma_General_B2)
                         {
@@ -131,10 +135,15 @@ namespace AppFuresa.Paginas
                         if (En_marcha_B2)
                         {
                             EstadoB2.Text = "Em Marcha";
+                            // Image im = new Image();
+                            b2.Source = ImageSource.FromFile("pump_on1.png");
 
                         }
-                        else EstadoB2.Text = "Parado";
-
+                        else
+                        {
+                            b2.Source = ImageSource.FromFile("pump_off.png");
+                            EstadoB2.Text = "Parado";
+                        }
 
                         if (!alarma_PresenciaTension)
                         {

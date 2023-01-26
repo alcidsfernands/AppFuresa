@@ -3,10 +3,93 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFuresa.Paginas.NitrogenioPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <StackLayout>
+                    <Label WidthRequest="410" Background="black" Opacity="0.5" Text="NITROGENIO" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    <Grid Margin="30">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid HorizontalOptions="StartAndExpand">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="200"/>
+                                <ColumnDefinition Width="2*"/>
+                            </Grid.ColumnDefinitions>
+                            <Image x:Name="NitroImage" Source="nitrogenio_off" Aspect="AspectFit" />
+                            
+                        </Grid>
+                        <StackLayout Grid.Row="1" HorizontalOptions="Start">
+                            <StackLayout>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="fan_icon_133581.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1"  Text="Estado: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="estadoN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_aire.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1"  Text="Pureza: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="purezaN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="80"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_barometro.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Presión:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="presionN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="120"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_nitrogenio.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Gas Caudal:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="caudalN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+
+
+                            </StackLayout>
+                        </StackLayout>
+                    </Grid>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

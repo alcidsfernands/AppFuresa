@@ -13,7 +13,7 @@ namespace AppFuresa
         {
             InitializeComponent();
 
-            MainPage = new Paginas.Pagina_Inicial();
+            MainPage = new Paginas.cctvPage();
         }
 
 

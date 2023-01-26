@@ -1,12 +1,32 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppFuresa.Paginas.cctvPage">
+             x:Class="AppFuresa.Paginas.cctvPage"
+             xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView Orientation="Horizontal">
+            <StackLayout Orientation="Horizontal">
+                <shared:VideoView x:Name="VideoView0" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView1" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView2" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView3" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView4" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView5" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView6" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView7" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView8" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView9" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView10" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView11" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView12" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView13" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView14" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView15" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView16" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView17" WidthRequest="410" HeightRequest="800"/>
+                <shared:VideoView x:Name="VideoView18" WidthRequest="410" HeightRequest="800"/>
+                
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

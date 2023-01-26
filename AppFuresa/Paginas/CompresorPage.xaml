@@ -2,11 +2,258 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFuresa.Paginas.CompresorPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+    <ContentPage.Content BackgroundColor="Black">
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <StackLayout>
+                    <Label WidthRequest="410" Background="black" Opacity="0.5" Text="GRUPO COMPRESOR 1" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    <Grid Margin="30">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="CompresorImage" Source="compressor_off" Aspect="AspectFit" />
+                        <StackLayout Grid.Row="1" HorizontalOptions="Start">
+                            <StackLayout>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_bombas.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Estado: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_horas" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Hora Func:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="#####" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_temperature" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Temp.Aire: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_barometro.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Presión: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_corrente" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Corriente: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_voltage" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Voltagen: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+
+
+
+
+                            </StackLayout>
+                        </StackLayout>
+                        
+                    </Grid>
+                </StackLayout>
+                <StackLayout>
+                    <Label WidthRequest="410" Background="black" Opacity="0.5" Text="GRUPO COMPRESOR 2" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    <Grid Margin="30">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="200"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Image x:Name="CompresorImage2" Source="compressor_off" Aspect="AspectFit" />
+                        <StackLayout Grid.Row="1" HorizontalOptions="Start">
+                            <StackLayout>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="100"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_bombas.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Estado: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_horas" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Hora Func:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="#####" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_temperature" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Temp.Aire: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_barometro.png" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Presión: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_corrente" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Corriente: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="40"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="2*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_voltage" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Voltagen: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+
+
+
+
+                            </StackLayout>
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+   
+                <StackLayout>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="80"/>
+                        </Grid.ColumnDefinitions>
+                        <Image Source="icons_alarma.png" Aspect="AspectFit" Background="black"/>
+                        <Label Grid.Column="1" WidthRequest="410" Background="black" Opacity="1" Text="ALARMAS" TextColor="Gold" VerticalTextAlignment="Center" HorizontalTextAlignment="Center" FontSize="Large"/>
+                    </Grid>
+                    <ListView x:Name="MylistView" HasUnevenRows="True" Footer="">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <ScrollView Orientation="Horizontal">
+                                        <StackLayout Orientation="Horizontal">
+                                            <Label Text="{Binding Data}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                            <Label Text="{Binding Seccion}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        </StackLayout>
+                                    </ScrollView>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </StackLayout>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
