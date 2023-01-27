@@ -120,6 +120,8 @@ namespace AppFuresa.Paginas
         protected override void OnDisappearing()
         {
             base.OnDisappearing();
+          
+
         }
         
         private void btn_CerrarPuertaEntrada_Clicked(object sender, EventArgs e)

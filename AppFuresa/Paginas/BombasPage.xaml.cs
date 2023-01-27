@@ -113,7 +113,7 @@ namespace AppFuresa.Paginas
                         }
                         if (En_marcha_B1)
                         {
-                            EstadoB1.Text = "Em Marcha";
+                            EstadoB1.Text = "En Marcha";
                             b1.Source = ImageSource.FromFile("pump_on1.png");
                         }
                         else
@@ -134,7 +134,7 @@ namespace AppFuresa.Paginas
                         }
                         if (En_marcha_B2)
                         {
-                            EstadoB2.Text = "Em Marcha";
+                            EstadoB2.Text = "En Marcha";
                             // Image im = new Image();
                             b2.Source = ImageSource.FromFile("pump_on1.png");
 

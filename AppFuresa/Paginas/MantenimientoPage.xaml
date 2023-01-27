@@ -3,10 +3,44 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFuresa.Paginas.MantenimientoPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <ScrollView>
+            <StackLayout>
+                <SearchBar x:Name="buscarbar" Placeholder="Buscar Equipos"
+                   CancelButtonColor="Orange"
+                   PlaceholderColor="Chocolate"
+                   TextColor="CadetBlue"
+                   HorizontalTextAlignment="Center"
+                   FontAttributes="Italic"
+                   FontSize="Small"
+                   VerticalOptions="StartAndExpand" SearchButtonPressed="Button_Clicked_1"/>
+                <Label x:Name="ResultQrCode" HorizontalOptions="CenterAndExpand"/>
+                <Button Text="QRcode Scanner" Clicked="Button_Clicked" CornerRadius="20" WidthRequest="80" HeightRequest="40" Margin="100" VerticalOptions="Start"/>
+                <Button Text="BUSCAR" Clicked="Button_Clicked_1" CornerRadius="20" WidthRequest="80" HeightRequest="40" Margin="100" VerticalOptions="Start"/>
+
+
+                <ListView x:Name="MylistView" HasUnevenRows="True" Footer="">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ScrollView Orientation="Horizontal">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Data}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding Seccion}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding Maquina}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding Grupo}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding Estado}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding Tarea}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding Operador}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                    </StackLayout>
+                                </ScrollView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

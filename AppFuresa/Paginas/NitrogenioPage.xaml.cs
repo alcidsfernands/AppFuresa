@@ -62,7 +62,7 @@ namespace AppFuresa.Paginas
                         {
                             NitroImage.Source = "nitrogenio_on1.png";
                             
-                            estadoN.Text = "Em Marcha";
+                            estadoN.Text = "En Marcha";
                           
                         }
                         else
@@ -75,25 +75,13 @@ namespace AppFuresa.Paginas
 
 
                     });
-                   
+                    await Task.Delay(2000);
 
                 }
 
             });
-           // await AnimationLoop();
+          
         }
-        //async Task AnimationLoop()
-        //{
 
-        //    while (EstadoNitro)
-        //    {
-        //        NitroImage.Source = "nitrogenio_on1.png";
-        //        await NitroImage.FadeTo(0.3, 2000);
-        //        await NitroImage.FadeTo(1, 2000);
-        //        await Task.Delay(TimeSpan.FromSeconds(0.01));
-                
-        //    }
-
-        //}
     }
 }
