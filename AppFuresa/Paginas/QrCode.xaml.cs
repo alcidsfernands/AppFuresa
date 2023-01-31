@@ -12,7 +12,8 @@ namespace AppFuresa.Paginas
     public partial class QrCode : ContentPage
     {
         public string valor;
-        public QrCode()
+        private static QrCode instance = null;
+        protected QrCode()
         {
             InitializeComponent();
             zxing.OnScanResult += (result) => Device.BeginInvokeOnMainThread(() =>
@@ -24,6 +25,20 @@ namespace AppFuresa.Paginas
 
             });
         }
+
+        public static QrCode Instance
+        {
+            get
+            {
+                if (instance == null)   
+                    instance = new QrCode();
+
+
+                return instance;
+            }
+
+            
+        }    
         public string Result() 
         {
             return lblResult.Text;
