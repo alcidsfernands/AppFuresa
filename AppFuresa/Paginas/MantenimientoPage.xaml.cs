@@ -19,7 +19,7 @@ namespace AppFuresa.Paginas
         async void Button_Clicked(object sender, EventArgs e)
         {
 
-           //  await Navigation.PushModalAsync(new QrCode());
+            await Navigation.PushModalAsync(new QrCode());
             var nada = QrCode.Instance;
 
         }

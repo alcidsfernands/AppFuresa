@@ -13,7 +13,7 @@ namespace AppFuresa
         {
             InitializeComponent();
 
-            MainPage = new Paginas.MantenimientoPage();
+            MainPage = new Paginas.Pagina_Inicial();
         }
 
 

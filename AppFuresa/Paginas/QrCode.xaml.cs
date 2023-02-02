@@ -13,7 +13,7 @@ namespace AppFuresa.Paginas
     {
         public string valor;
         private static QrCode instance = null;
-        protected QrCode()
+        public QrCode()
         {
             InitializeComponent();
             zxing.OnScanResult += (result) => Device.BeginInvokeOnMainThread(() =>
