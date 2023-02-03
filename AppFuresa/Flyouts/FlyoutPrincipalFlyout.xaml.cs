@@ -1,14 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Collections.ObjectModel;
-using System.ComponentModel;
 using System.Linq;
-using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
-
+using AppFuresa.Modelos;
+using SQLite;
+//using AppFuresa.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.IO;
+using AppFuresa.Paginas;
+
 
 namespace AppFuresa.Flyouts
 {
@@ -21,36 +23,31 @@ namespace AppFuresa.Flyouts
         {
             InitializeComponent();
 
-            BindingContext = new FlyoutPrincipalFlyoutViewModel();
-            ListView = MenuItemsListView;
         }
 
-        private class FlyoutPrincipalFlyoutViewModel : INotifyPropertyChanged
+        private async void listView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            public ObservableCollection<FlyoutPrincipalFlyoutMenuItem> MenuItems { get; set; }
 
-            public FlyoutPrincipalFlyoutViewModel()
+            object lis = listView.ItemsSource;
+
+
+            if (listView.SelectedItem == flayoutIteM.GetValue(3))
             {
-                MenuItems = new ObservableCollection<FlyoutPrincipalFlyoutMenuItem>(new[]
+                try
                 {
-                    new FlyoutPrincipalFlyoutMenuItem { Id = 0, Title = "Page 1" },
-                    new FlyoutPrincipalFlyoutMenuItem { Id = 1, Title = "Page 2" },
-                    new FlyoutPrincipalFlyoutMenuItem { Id = 2, Title = "Page 3" },
-                    new FlyoutPrincipalFlyoutMenuItem { Id = 3, Title = "Page 4" },
-                    new FlyoutPrincipalFlyoutMenuItem { Id = 4, Title = "Page 5" },
-                });
+                    SQLiteAsyncConnection db = new SQLiteAsyncConnection(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Usuario.db2"));  //busca en este ruta
+                    int del = await App.SQLiteDB.BorrarUserAll();   // metodo para borrar la tabla de user
+                    db.CreateTableAsync<user>().Wait();  // depues de borrar la tabla, se crea una nueva tabla con mismo nombre
+                }
+                catch (Exception)
+                {
+
+                    throw;
+                }
             }
 
-            #region INotifyPropertyChanged Implementation
-            public event PropertyChangedEventHandler PropertyChanged;
-            void OnPropertyChanged([CallerMemberName] string propertyName = "")
-            {
-                if (PropertyChanged == null)
-                    return;
 
-                PropertyChanged.Invoke(this, new PropertyChangedEventArgs(propertyName));
-            }
-            #endregion
+
         }
     }
 }

@@ -14,7 +14,16 @@ namespace AppFuresa.TabPaginas
     {
         public TabPrincipal()
         {
-            InitializeComponent();
+            try
+            {
+                InitializeComponent();
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
     }
 }

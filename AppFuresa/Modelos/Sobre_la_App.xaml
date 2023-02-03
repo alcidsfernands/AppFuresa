@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFuresa.Modelos.Sobre_la_App">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="SOBRE"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Label Text="Aplicación Cross-Plataforma de implementación con la framework
+Xamarin.Forms con objetivo de monitorizar datos de mantenimiento, datos de variables de proceso y estados de los
+de Maquinas, Controlo de las puertas y integración de las camaras de supervisión en tiempo real."/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

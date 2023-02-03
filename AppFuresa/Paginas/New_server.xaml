@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFuresa.Paginas.New_server">
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Guardar" Clicked="guardar_Clicked"/>
+           
+    </ContentPage.ToolbarItems>
+    <StackLayout>
+       
+        <TableView Intent="Form">
+            <TableView.Root>
+                <TableSection>
+                    <EntryCell x:Name="Nome_Servidor" Label="Nombre:" />
+                    <EntryCell x:Name="Ip" Label="IP:" />
+                    <EntryCell x:Name="User" Label="User:"/>
+                    <EntryCell x:Name="Password" Label="Password:"/>
+                    <ViewCell>
+                        <Picker x:Name="Tipo" Title="TipoServer" SelectedItem="{Binding SelectedColorName, Mode=TwoWay}">
+                            <Picker.Items>
+                                <x:String>OPC</x:String>
+                                <x:String>MODBUS</x:String>
+                                <x:String>SQL</x:String>
+                                <x:String>CAMERA</x:String>
+                            </Picker.Items>
+                        </Picker>
+                    </ViewCell>
+                </TableSection>
+            </TableView.Root>
+        </TableView>
+
+
+
+        <Button Text="Guardar" Clicked="guardar_Clicked"/>
+        <Button Text="Borrar" Clicked="Button_Clicked_1"/>
+        <Button Text="Salir" Clicked="Button_Clicked"/>
+    </StackLayout>
+</ContentPage>

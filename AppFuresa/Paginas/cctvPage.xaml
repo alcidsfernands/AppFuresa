@@ -6,6 +6,7 @@
     <ContentPage.Content >
         <ScrollView Orientation="Horizontal">
             <StackLayout Orientation="Horizontal">
+                <!-->
                 <shared:VideoView x:Name="VideoView0" WidthRequest="410" HeightRequest="800"/>
                 <shared:VideoView x:Name="VideoView1" WidthRequest="410" HeightRequest="800"/>
                 <shared:VideoView x:Name="VideoView2" WidthRequest="410" HeightRequest="800"/>
@@ -25,7 +26,27 @@
                 <shared:VideoView x:Name="VideoView16" WidthRequest="410" HeightRequest="800"/>
                 <shared:VideoView x:Name="VideoView17" WidthRequest="410" HeightRequest="800"/>
                 <shared:VideoView x:Name="VideoView18" WidthRequest="410" HeightRequest="800"/>
-                
+                -->
+
+                <ListView x:Name="ListServerView" HasUnevenRows="True" ItemSelected="ListServerView_ItemSelected">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <ScrollView Orientation="Vertical">
+                                    <StackLayout Orientation="Horizontal">
+                                        <Label Text="{Binding Nome}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding IP}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Label Text="{Binding Tipo}" Margin="10" HorizontalOptions="CenterAndExpand"/>
+                                        <Button Text="ENTRAR" Clicked="Button_Clicked"/>
+
+                                    </StackLayout>
+                                    
+                                </ScrollView>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                    
+                </ListView>
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

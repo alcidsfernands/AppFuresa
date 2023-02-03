@@ -9,7 +9,7 @@ namespace AppFuresa.Modelos
     {
         public string Name { get; set; }
         [PrimaryKey]
-        public string URL { get; set; }
+        public string IP { get; set; }
         public string Username { get; set; }
         public string Password { get; set; }
         public string Tipo{ get; set; }

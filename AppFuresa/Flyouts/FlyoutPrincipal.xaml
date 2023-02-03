@@ -2,12 +2,12 @@
 <FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFuresa.Flyouts.FlyoutPrincipal"
-             xmlns:pages="clr-namespace:AppFuresa.Flyouts"
+             xmlns:local="clr-namespace:AppFuresa.Flyouts"
                 xmlns:pagesDetail="clr-namespace:AppFuresa.TabPaginas">
-  <FlyoutPage.Flyout>
-    <pages:FlyoutPrincipalFlyout x:Name="FlyoutPage" />
-  </FlyoutPage.Flyout>
-  <FlyoutPage.Detail>
+    <FlyoutPage.Flyout BackgroundColor="Black">
+        <local:FlyoutPrincipalFlyout x:Name="flyoutPage"/>
+    </FlyoutPage.Flyout>
+    <FlyoutPage.Detail>
     <NavigationPage>
       <x:Arguments>
         <pagesDetail:TabPrincipal/>
