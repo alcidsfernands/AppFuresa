@@ -16,7 +16,7 @@ namespace AppFuresa.Paginas
     {
         const string URL_CamPuertaEntrada = "rtsp://admin:Furesa11@192.168.0.166:554/live1.sdp";
         const string URL_CamPuertaCascula = "rtsp://admin:Furesa11@192.168.0.165:554/live1.sdp";
-        readonly LibVLC _libvlc;
+        readonly LibVLC _libvlc1;
         S7Client ClientPLC_PuertaEntrada;
         S7Client ClientPLC_PuertaBAscula;
         int clieConected;
@@ -30,18 +30,18 @@ namespace AppFuresa.Paginas
         {
             InitializeComponent();
             Core.Initialize();
-            _libvlc = new LibVLC();
+            _libvlc1 = new LibVLC();
         }
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            CamPuertaPrincipal.MediaPlayer = new MediaPlayer(_libvlc);
-            using (var media = new Media(_libvlc, new Uri(URL_CamPuertaEntrada)))
+            CamPuertaPrincipal.MediaPlayer = new MediaPlayer(_libvlc1);
+            using (var media = new Media(_libvlc1, new Uri(URL_CamPuertaEntrada)))
                 CamPuertaPrincipal.MediaPlayer.Play(media);
 
-            CamPuertaBascula.MediaPlayer = new MediaPlayer(_libvlc);
-            using (var media = new Media(_libvlc, new Uri(URL_CamPuertaCascula)))
+            CamPuertaBascula.MediaPlayer = new MediaPlayer(_libvlc1);
+            using (var media = new Media(_libvlc1, new Uri(URL_CamPuertaCascula)))
                 CamPuertaBascula.MediaPlayer.Play(media);
 
 

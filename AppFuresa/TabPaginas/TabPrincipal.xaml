@@ -6,11 +6,12 @@
              x:Class="AppFuresa.TabPaginas.TabPrincipal" BarBackgroundColor="Chocolate" BarTextColor="Azure"
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom">
-  <!--Pages can be added as references or inline-->
-
+    <!--Pages can be added as references or inline-->
     <Paginas:PuertasPage IconImageSource="gate" Title="PUERTAS"/>
+    
     <tabbed:TabSCADA IconImageSource="desktop" Title="SCADA"/>
-    <Paginas:cctvPage IconImageSource="cctv" Title="CCTV"/>
+    
     <Paginas:MantenimientoPage IconImageSource="mantenimiento" Title="MANTENIMIENTO"/>
+    <Paginas:cctvPage IconImageSource="cctv" Title="CCTV"/>
 
 </TabbedPage>

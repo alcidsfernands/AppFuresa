@@ -2,32 +2,12 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFuresa.Paginas.cctvPage"
-             xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms" BackgroundColor="Black">
+             xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms">
     <ContentPage.Content >
         <ScrollView Orientation="Horizontal">
             <StackLayout Orientation="Horizontal">
-                <!-->
-                <shared:VideoView x:Name="VideoView0" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView1" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView2" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView3" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView4" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView5" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView6" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView7" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView8" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView9" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView10" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView11" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView12" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView13" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView14" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView15" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView16" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView17" WidthRequest="410" HeightRequest="800"/>
-                <shared:VideoView x:Name="VideoView18" WidthRequest="410" HeightRequest="800"/>
-                -->
-
+                
+                <!--
                 <ListView x:Name="ListServerView" HasUnevenRows="True" ItemSelected="ListServerView_ItemSelected">
                     <ListView.ItemTemplate>
                         <DataTemplate>
@@ -37,16 +17,38 @@
                                         <Label Text="{Binding Nome}" Margin="10" HorizontalOptions="CenterAndExpand"/>
                                         <Label Text="{Binding IP}" Margin="10" HorizontalOptions="CenterAndExpand"/>
                                         <Label Text="{Binding Tipo}" Margin="10" HorizontalOptions="CenterAndExpand"/>
-                                        <Button Text="ENTRAR" Clicked="Button_Clicked"/>
+
 
                                     </StackLayout>
-                                    
+
                                 </ScrollView>
                             </ViewCell>
                         </DataTemplate>
                     </ListView.ItemTemplate>
-                    
+
                 </ListView>
+                -->
+                
+                <shared:VideoView Margin="20" x:Name="VideoView0" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView1" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView2" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView3" WidthRequest="150"/>
+                <shared:VideoView Margin="20" x:Name="VideoView4" WidthRequest="410" />
+                <shared:VideoView Margin="20" x:Name="VideoView5" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView6" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView7" WidthRequest="410" />
+                <shared:VideoView Margin="20" x:Name="VideoView8" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView9" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView10" WidthRequest="410" />
+                <shared:VideoView Margin="20" x:Name="VideoView11" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView12" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView13" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView14" WidthRequest="410"/>
+                <shared:VideoView Margin="20" x:Name="VideoView15" WidthRequest="410" />
+                <shared:VideoView Margin="20"  x:Name="VideoView16" WidthRequest="410" />
+                <shared:VideoView Margin="20" x:Name="VideoView17" WidthRequest="410" />
+                <shared:VideoView Margin="20" x:Name="VideoView18" WidthRequest="410"/>
+   
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -3,11 +3,15 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <ProduceReferenceAssembly>true</ProduceReferenceAssembly>
+    <PackageIcon>furelogo1.png</PackageIcon>
+    <Company>Furesa</Company>
+    <Product>Furescreen</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
     <DebugType>portable</DebugType>
     <DebugSymbols>true</DebugSymbols>
+    <Optimize>True</Optimize>
   </PropertyGroup>
 
   <ItemGroup>
@@ -83,5 +87,12 @@
 
   <ItemGroup>
     <Folder Include="DAL\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\AppFuresa.Android\Resources\drawable\furelogo1.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 </Project>
