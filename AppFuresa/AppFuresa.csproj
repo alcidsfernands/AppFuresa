@@ -82,7 +82,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Clases\" />
     <Folder Include="DAL\" />
   </ItemGroup>
 </Project>
