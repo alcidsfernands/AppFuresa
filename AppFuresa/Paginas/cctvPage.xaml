@@ -32,21 +32,21 @@
                 <shared:VideoView Margin="20" x:Name="VideoView0" WidthRequest="400"/>
                 <shared:VideoView Margin="20" x:Name="VideoView1" WidthRequest="400"/>
                 <shared:VideoView Margin="20" x:Name="VideoView2" WidthRequest="400"/>
-                <shared:VideoView Margin="20" x:Name="VideoView3" WidthRequest="150"/>
-                <shared:VideoView Margin="20" x:Name="VideoView4" WidthRequest="410" />
-                <shared:VideoView Margin="20" x:Name="VideoView5" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView6" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView7" WidthRequest="410" />
-                <shared:VideoView Margin="20" x:Name="VideoView8" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView9" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView10" WidthRequest="410" />
-                <shared:VideoView Margin="20" x:Name="VideoView11" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView12" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView13" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView14" WidthRequest="410"/>
-                <shared:VideoView Margin="20" x:Name="VideoView15" WidthRequest="410" />
-                <shared:VideoView Margin="20"  x:Name="VideoView16" WidthRequest="410" />
-                <shared:VideoView Margin="20" x:Name="VideoView17" WidthRequest="410" />
+                <shared:VideoView Margin="20" x:Name="VideoView3" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView4" WidthRequest="400" />
+                <shared:VideoView Margin="20" x:Name="VideoView5" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView6" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView7" WidthRequest="400" />
+                <shared:VideoView Margin="20" x:Name="VideoView8" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView9" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView10" WidthRequest="400" />
+                <shared:VideoView Margin="20" x:Name="VideoView11" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView12" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView13" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView14" WidthRequest="400"/>
+                <shared:VideoView Margin="20" x:Name="VideoView15" WidthRequest="400" />
+                <shared:VideoView Margin="20"  x:Name="VideoView16" WidthRequest="400" />
+                <shared:VideoView Margin="20" x:Name="VideoView17" WidthRequest="400" />
                 <shared:VideoView Margin="20" x:Name="VideoView18" WidthRequest="410"/>
    
             </StackLayout>

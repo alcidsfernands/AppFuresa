@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using LibVLCSharp.Shared;
+//using LibVLCSharp.Shared;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using Sharp7;
@@ -16,8 +16,8 @@ namespace AppFuresa.Paginas
     {
         const string URL_CamPuertaEntrada = "rtsp://admin:Furesa11@192.168.0.166:554/live1.sdp";
         const string URL_CamPuertaCascula = "rtsp://admin:Furesa11@192.168.0.165:554/live1.sdp";
-        readonly LibVLC _libvlc1;
-        S7Client ClientPLC_PuertaEntrada;
+        //readonly LibVLC _libvlc1;
+       S7Client ClientPLC_PuertaEntrada;
         S7Client ClientPLC_PuertaBAscula;
         int clieConected;
         byte[] Receber_Puerta_Entrada = new byte[1];
@@ -29,43 +29,48 @@ namespace AppFuresa.Paginas
         public PuertasPage()
         {
             InitializeComponent();
-            Core.Initialize();
-            _libvlc1 = new LibVLC();
+            //Core.Initialize();
+            //_libvlc1 = new LibVLC();
+
+            try
+            {
+                if (ClientPLC_PuertaEntrada == null)
+                {
+                    ClientPLC_PuertaEntrada = new S7Client();
+                    ClientPLC_PuertaEntrada.Disconnect();
+                    clieConected = ClientPLC_PuertaEntrada.ConnectTo("192.168.0.169", 0, 1);
+
+                }
+
+
+
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
 
         protected async override void OnAppearing()
         {
             base.OnAppearing();
-            CamPuertaPrincipal.MediaPlayer = new MediaPlayer(_libvlc1);
-            using (var media = new Media(_libvlc1, new Uri(URL_CamPuertaEntrada)))
-                CamPuertaPrincipal.MediaPlayer.Play(media);
+            //CamPuertaPrincipal.MediaPlayer = new MediaPlayer(_libvlc1);
+            //using (var media = new Media(_libvlc1, new Uri(URL_CamPuertaEntrada)))
+            //    CamPuertaPrincipal.MediaPlayer.Play(media);
 
-            CamPuertaBascula.MediaPlayer = new MediaPlayer(_libvlc1);
-            using (var media = new Media(_libvlc1, new Uri(URL_CamPuertaCascula)))
-                CamPuertaBascula.MediaPlayer.Play(media);
+            //CamPuertaBascula.MediaPlayer = new MediaPlayer(_libvlc1);
+            //using (var media = new Media(_libvlc1, new Uri(URL_CamPuertaCascula)))
+            //    CamPuertaBascula.MediaPlayer.Play(media);
 
 
             await Task.Run(async () =>
             {
+
                 try
                 {
-                    if (ClientPLC_PuertaEntrada == null)
-                    {
-                        ClientPLC_PuertaEntrada = new S7Client();
-                        ClientPLC_PuertaEntrada.Disconnect();
-                        clieConected = ClientPLC_PuertaEntrada.ConnectTo("192.168.0.169", 0, 1);
-                        
-                    }
 
-                     
-
-                }
-                catch (Exception)
-                {
-
-                    throw;
-                }
-
+                
 
                 while (ClientPLC_PuertaEntrada.Connected)
                 {
@@ -112,7 +117,12 @@ namespace AppFuresa.Paginas
                     await Task.Delay(2000);
 
                 }
+                }
+                catch (Exception)
+                {
 
+                    throw;
+                }
             });
 
 

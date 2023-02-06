@@ -7,5 +7,6 @@
     <Paginas:BombasPage IconImageSource="icons_bombas.png" Title="BOMBA"/>
     <Paginas:CompresorPage IconImageSource="icons_compresor.png" Title="COMPRESOR"/>
     <Paginas:NitrogenioPage IconImageSource="icons_nitrogenio.png" Title="NITROGENIO"/>
+    <Paginas:GrupoHidraulicoPage IconImageSource="icons_barometro.png" Title="GRUPO HIDRAU"/>
 
 </TabbedPage>

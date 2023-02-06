@@ -22,7 +22,7 @@ namespace AppFuresa.Paginas
         {
             try
             {
-                await Task.Delay(3000);
+                await Task.Delay(2000);
                 await Navigation.PushModalAsync(new NavigationPage(new Login()));
                 base.OnAppearing();
             }

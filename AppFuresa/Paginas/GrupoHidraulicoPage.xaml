@@ -1,0 +1,229 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AppFuresa.Paginas.GrupoHidraulicoPage">
+    <ContentPage.Content>
+        <ScrollView Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <StackLayout>
+                    <Grid Margin="10">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="100"/>
+                            <RowDefinition Height="*"/>
+                        </Grid.RowDefinitions>
+                        <StackLayout Orientation="Vertical">
+                            <StackLayout Orientation="Horizontal">
+                                <Image x:Name="GRUPO1" Source="pump_off" WidthRequest="60" HeightRequest="50" Aspect="AspectFit" />
+                                <Image x:Name="GRUPO2" Source="pump_off" WidthRequest="60" HeightRequest="50" Aspect="AspectFit" />
+                                <Image x:Name="GRUPO3" Source="pump_off" WidthRequest="60" HeightRequest="50" Aspect="AspectFit" />
+                                <Image x:Name="GRUPO4" Source="pump_off" WidthRequest="60" HeightRequest="50" Aspect="AspectFit" />
+                                <Image x:Name="GRUPO5" Source="pump_off" WidthRequest="60" HeightRequest="50" Aspect="AspectFit" />
+                            </StackLayout >
+                            <StackLayout Orientation="Horizontal">
+                                <Button CornerRadius="20" x:Name="GRUPO1_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                <Button CornerRadius="20" x:Name="GRUPO2_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                <Button CornerRadius="20" x:Name="GRUPO3_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                <Button CornerRadius="20" x:Name="GRUPO4_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                <Button CornerRadius="20" x:Name="GRUPO5_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+
+                            </StackLayout>
+                            
+                        </StackLayout>
+
+                        
+                        
+                        <StackLayout Grid.Row="1" HorizontalOptions="Start">
+                            <StackLayout>
+
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                    <Image Source="icons_temperature" Aspect="AspectFit" />
+                                    <Label Grid.Column="1" Text="Temp.Aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label x:Name="Temp_aceite" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+                                  
+                                    <Label Grid.Column="1" Text="Nivel Aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label x:Name="Nivel_aceite" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    
+
+
+                                    <Label Grid.Column="1" Text="Percentagen Aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label x:Name="percent_aceite" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="1" Text="Nivel minimo Aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label x:Name="Nivel_minimo_aceite" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    
+
+
+                                    <Label Grid.Column="1" Text="Valor minimo Aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label x:Name="Val_mini_aceite" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="1" Text="Valor reset alama aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label x:Name="Val_reset_aceite" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+
+                                </Grid>
+
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="1" Text="PRESION NEUMATICA: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Button Grid.Column="2"  CornerRadius="20" x:Name="Presion_Neumatica" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" />
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="1" Text="PRESION HIDRAULICA: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Button Grid.Column="2"  CornerRadius="20" x:Name="Presion_Hidraulica" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" />
+
+                                </Grid>
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="1" Text="SEGURIDAD ARRANQUE: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Button Grid.Column="2"  CornerRadius="20" x:Name="Seguridad_arranque" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" />
+
+                                </Grid>
+
+                                <Grid HorizontalOptions="EndAndExpand">
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="50"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="50"/>
+                                        <ColumnDefinition Width="110"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+
+
+                                    <Label Grid.Column="1" Text="ALARMA BOMBAS: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Button Grid.Column="2"  CornerRadius="20" x:Name="Alarma_Bombas" WidthRequest="40" HeightRequest="40" HorizontalOptions="Start" />
+
+                                </Grid>
+
+                                <StackLayout>
+
+                                    <Label Text="ELECTRO VALVULAS BOMBAS" HorizontalOptions="Center" BackgroundColor="Black"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Button  CornerRadius="20" x:Name="EV1_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button  CornerRadius="20" x:Name="EV2_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button CornerRadius="20" x:Name="EV3_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button CornerRadius="20" x:Name="EV4_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button CornerRadius="20" x:Name="EV5_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+
+                                    </StackLayout>
+                                </StackLayout>
+                                <StackLayout>
+
+                                    <Label Text="TERMICOS BOMBAS" HorizontalOptions="Center" BackgroundColor="Black"/>
+                                    <StackLayout Orientation="Horizontal">
+                                        <Button  CornerRadius="20" x:Name="TER1_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button  CornerRadius="20" x:Name="TER2_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button CornerRadius="20" x:Name="TER3_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button CornerRadius="20" x:Name="TER4_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+                                        <Button CornerRadius="20" x:Name="TER5_Estado" WidthRequest="60" HeightRequest="20" HorizontalOptions="Center" />
+
+                                    </StackLayout>
+                                </StackLayout>
+
+
+
+                            </StackLayout>
+                        </StackLayout>
+
+                    </Grid>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

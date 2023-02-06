@@ -168,7 +168,7 @@ namespace AppFuresa.Paginas
                         if (alarma_General_B2) Alarm.Add("Alarma General BOMBA2\n");
                         if (alarma_Temperatura) Alarm.Add("Temperatura de la Agua está Alta\n");
                         if (alarma_PresenciaAgua) Alarm.Add("Falta de Agua\n");
-                        if (alarma_PresenciaTension) Alarm.Add("Bombas Sin Tension\n");
+                      //  if (alarma_PresenciaTension) Alarm.Add("Bombas Sin Tension\n");
                         
 
 
