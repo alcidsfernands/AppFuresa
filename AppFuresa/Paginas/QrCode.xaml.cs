@@ -12,7 +12,7 @@ namespace AppFuresa.Paginas
     public partial class QrCode : ContentPage
     {
         public string valor;
-        private static QrCode instance = null;
+        private static QrCode instance = new QrCode();
         public QrCode()
         {
             InitializeComponent();

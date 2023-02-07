@@ -21,6 +21,7 @@ namespace AppFuresa.Paginas
 
             await Navigation.PushModalAsync(new QrCode());
             var nada = QrCode.Instance;
+            
 
         }
         public void buscaQR(string buscar)

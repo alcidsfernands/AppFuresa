@@ -15,10 +15,13 @@ namespace AppFuresa.Paginas
     public partial class Login : ContentPage
     {
         Modelos.user Usuario;
+        
         public Login()
         {
             InitializeComponent();
         }
+
+        
 
         private async void btn_Login_Clicked(object sender, EventArgs e)
         {
