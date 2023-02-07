@@ -10,39 +10,38 @@
                     <Image x:Name="b1" Source="pump_off" WidthRequest="100" HeightRequest="110" Aspect="AspectFit" />
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image Source="icons_bombas.png" Aspect="AspectFit" HeightRequest="30"  />
-                        <Label Text="Estado:" TextColor="AliceBlue" FontSize="Medium"/>
-                        <Label x:Name="EstadoB1" Text="#####" TextColor="Gold" FontSize="Medium"/>
+                        <Label Text="Estado:" TextColor="AliceBlue" FontSize="Small"/>
+                        <Label x:Name="EstadoB1" Text="#####" TextColor="Gold" FontSize="Small"/>
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image Source="icons_horas" Aspect="AspectFit" HeightRequest="30"/>
-                        <Label  Text="Horas de Func:" TextColor="AliceBlue" FontSize="Medium"/>
-                        <Label  x:Name="horasB1" Text="##h:##min" TextColor="Gold" FontSize="Medium"/>
+                        <Label  Text="Horas de Func:" TextColor="AliceBlue" FontSize="Small"/>
+                        <Label  x:Name="horasB1" Text="##h:##min" TextColor="Gold" FontSize="Small"/>
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image Source="icons_temperature" Aspect="AspectFit" HeightRequest="30" />
-                        <Label Text="Temp.Agua: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
-                        <Label x:Name="tempB1" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Large" VerticalTextAlignment="Center"/>
+                        <Label Text="Temp.Agua: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                        <Label x:Name="tempB1" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image HeightRequest="30" Source="icons_barometro.png" Aspect="AspectFit" />
-                        <Button x:Name="FluxoB1" CornerRadius="20" HorizontalOptions="StartAndExpand" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
-
-                        <Label Text="Flujostato" TextColor="White" HorizontalOptions="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                        <Button x:Name="FluxoB1" CornerRadius="20"  BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
+                        <Label Text="Flujostato" TextColor="White"  VerticalTextAlignment="Center" FontSize="Small"/>
 
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image HeightRequest="30" Source="icons_tension.png" Aspect="AspectFit" />
-                        <Button x:Name="tensionB1" CornerRadius="20" HorizontalOptions="StartAndExpand" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
+                        <Button x:Name="tensionB1" CornerRadius="20" HorizontalOptions="End" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
 
-                        <Label Text="Presencia Tension" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                        <Label Text="Presencia Tension" TextColor="White"  VerticalTextAlignment="Center" FontSize="Small"/>
 
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
 
                         <Image HeightRequest="30" Source="icons_fuse.png" Aspect="AspectFit" />
-                        <Button x:Name="protecionB1" CornerRadius="20" HorizontalOptions="StartAndExpand" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
+                        <Button x:Name="protecionB1" CornerRadius="20" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
 
-                        <Label Text="Protección" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                        <Label Text="Protección" TextColor="White"  FontSize="Small" VerticalTextAlignment="Center"/>
 
                     </StackLayout>
 
@@ -54,39 +53,39 @@
                     <Image x:Name="b2" Source="pump_off" WidthRequest="100" HeightRequest="110" Aspect="AspectFit" />
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image Source="icons_bombas.png" Aspect="AspectFit" HeightRequest="30"  />
-                        <Label Text="Estado:" TextColor="AliceBlue" FontSize="Medium"/>
-                        <Label x:Name="EstadoB2" Text="#####" TextColor="Gold" FontSize="Medium"/>
+                        <Label Text="Estado:" TextColor="AliceBlue" FontSize="Small"/>
+                        <Label x:Name="EstadoB2" Text="#####" TextColor="Gold" FontSize="Small"/>
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image Source="icons_horas" Aspect="AspectFit" HeightRequest="30"/>
-                        <Label  Text="Horas de Func:" TextColor="AliceBlue" FontSize="Medium"/>
-                        <Label  x:Name="horasB2" Text="##h:##min" TextColor="Gold" FontSize="Medium"/>
+                        <Label  Text="Horas de Func:" TextColor="AliceBlue" FontSize="Small"/>
+                        <Label  x:Name="horasB2" Text="##h:##min" TextColor="Gold" FontSize="Small"/>
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image Source="icons_temperature" Aspect="AspectFit" HeightRequest="30" />
-                        <Label Text="Temp.Agua: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
-                        <Label x:Name="tempB2" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Large" VerticalTextAlignment="Center"/>
+                        <Label Text="Temp.Agua: " TextColor="White"  FontSize="Small" VerticalTextAlignment="Center"/>
+                        <Label x:Name="tempB2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image HeightRequest="30" Source="icons_barometro.png" Aspect="AspectFit" />
-                        <Button x:Name="FluxoB2" CornerRadius="20" HorizontalOptions="StartAndExpand" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
+                        <Button x:Name="FluxoB2" CornerRadius="20" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
 
-                        <Label Text="Flujostato" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                        <Label Text="Flujostato" TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
                         <Image HeightRequest="30" Source="icons_tension.png" Aspect="AspectFit" />
-                        <Button x:Name="tensionB2" CornerRadius="20" HorizontalOptions="StartAndExpand" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
+                        <Button x:Name="tensionB2" CornerRadius="20" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
 
-                        <Label Text="Presencia Tension" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                        <Label Text="Presencia Tension" TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                     </StackLayout>
                     <StackLayout Margin="10" Orientation="Horizontal">
 
                         <Image HeightRequest="30" Source="icons_fuse.png" Aspect="AspectFit" />
-                        <Button x:Name="protecionB2" CornerRadius="20" HorizontalOptions="StartAndExpand" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
+                        <Button x:Name="protecionB2" CornerRadius="20" BackgroundColor="Gray" HeightRequest="40" WidthRequest="40"/>
 
-                        <Label Text="Protección" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                        <Label Text="Protección" TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                     </StackLayout>
 
@@ -98,7 +97,7 @@
 
 
 
-                <StackLayout>
+                <StackLayout Margin="50">
                     <Grid>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="50"/>

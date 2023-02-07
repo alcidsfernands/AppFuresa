@@ -52,11 +52,11 @@ namespace AppFuresa.Paginas
                         ClientePLC_Puerta.DBRead(14, 0, 78, ReceberDatos_GrupoHi);
                       
                         Temp_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 10).ToString() + " ºC";
-                        Nivel_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 14).ToString() + " cm";
+                        Nivel_aceite.Text = (S7.GetRealAt(ReceberDatos_GrupoHi, 14)/10.0).ToString() + " cm";
                         percent_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 18).ToString() + " %";
-                        Nivel_minimo_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 46).ToString() + " cm";
-                        Val_mini_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 38).ToString() + " cm";
-                        Val_reset_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 42).ToString() + " cm";
+                        Nivel_minimo_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 46).ToString() + " %";
+                        Val_mini_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 38).ToString() + " %";
+                        Val_reset_aceite.Text = S7.GetRealAt(ReceberDatos_GrupoHi, 42).ToString() + " %";
                         bool presNeumatica = S7.GetBitAt(ReceberDatos_GrupoHi, 76, 6);
                         bool presHidraulica = S7.GetBitAt(ReceberDatos_GrupoHi, 76, 7);
                         bool SeguridadArranque = S7.GetBitAt(ReceberDatos_GrupoHi, 61, 0);

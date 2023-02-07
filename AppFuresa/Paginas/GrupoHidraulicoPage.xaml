@@ -108,7 +108,7 @@
                                     
 
 
-                                    <Label Grid.Column="1" Text="Valor minimo Aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="1" Text="Valor minimo alarma Aceite: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
                                     <Label x:Name="Val_mini_aceite" Grid.Column="2" Text="######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                                 </Grid>

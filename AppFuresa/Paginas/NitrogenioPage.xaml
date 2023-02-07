@@ -33,8 +33,8 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Image Source="fan_icon_133581.png" Aspect="AspectFit" />
-                                    <Label Grid.Column="1"  Text="Estado: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
-                                    <Label Grid.Column="2" x:Name="estadoN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="1"  Text="Estado: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="estadoN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                                 </Grid>
                                 <Grid HorizontalOptions="EndAndExpand">
@@ -48,8 +48,8 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Image Source="icons_aire.png" Aspect="AspectFit" />
-                                    <Label Grid.Column="1"  Text="Pureza: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
-                                    <Label Grid.Column="2" x:Name="purezaN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="1"  Text="Pureza: " TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="purezaN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                                 </Grid>
 
@@ -64,8 +64,8 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Image Source="icons_barometro.png" Aspect="AspectFit" />
-                                    <Label Grid.Column="1" Text="Presión:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
-                                    <Label Grid.Column="2" x:Name="presionN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="1" Text="Presión:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="presionN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                                 </Grid>
                                 <Grid HorizontalOptions="EndAndExpand">
@@ -79,8 +79,8 @@
                                     </Grid.ColumnDefinitions>
 
                                     <Image Source="icons_nitrogenio.png" Aspect="AspectFit" />
-                                    <Label Grid.Column="1" Text="Gas Caudal:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
-                                    <Label Grid.Column="2" x:Name="caudalN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Medium" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="1" Text="Gas Caudal:" TextColor="White" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
+                                    <Label Grid.Column="2" x:Name="caudalN" Text="#######" TextColor="Gold" HorizontalTextAlignment="Start" FontSize="Small" VerticalTextAlignment="Center"/>
 
                                 </Grid>
 

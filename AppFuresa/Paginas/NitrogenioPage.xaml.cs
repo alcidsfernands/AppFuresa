@@ -52,8 +52,8 @@ namespace AppFuresa.Paginas
 
                         List<string> Alarm = new List<string>();
 
-                        caudalN.Text = S7.GetRealAt(ReceberDatos_Nitrogenio, 0).ToString() + " l/m";
-                        presionN.Text = S7.GetRealAt(ReceberDatos_Nitrogenio, 4).ToString() + " Bar";
+                        caudalN.Text = (S7.GetRealAt(ReceberDatos_Nitrogenio, 0)/10.0).ToString() + " l/min";
+                        presionN.Text = (S7.GetRealAt(ReceberDatos_Nitrogenio, 4)/100.0).ToString() + " Bar";
                         purezaN.Text = S7.GetRealAt(ReceberDatos_Nitrogenio, 8).ToString() + " %";
 
 
