@@ -39,10 +39,11 @@ namespace AppFuresa.Paginas
                 string connetionString;
                 String queryCommand = "";
                 SqlConnection cnn;
-                connetionString = @"Data Source=tcp:192.168.0.202,1433\SQLEXPRESS;Initial Catalog=PDStorage;User ID=FURESCREEN;Password=Furesa11-;";
+                connetionString = @"Data Source=tcp:192.168.0.202,1433\SQLEXPRESS;Initial Catalog=PDStorage;User ID=FURESCREEN;Password=Furesa11@;";
                 cnn = new SqlConnection(connetionString);
+                cnn.Close();
                 cnn.Open();
-                if (buscarbar.Text == string.Empty)
+                if (buscarbar.Text == string.Empty || buscarbar.Text == null)
                 {
                     queryCommand = "SELECT TOP (1000) [FechaRegistroAreneria],[Seccion],[Maquina],[Grupo],[EstadoMaquina],[Tarea],[Operario] FROM[PDStorage].[Mantenimiento].[RegistroAreneria]";
                 }

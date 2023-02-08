@@ -62,7 +62,7 @@ namespace AppFuresa.Paginas
                                                     Usuario = new user
                                                     {
                                                         Username = UserId.Text,
-                                                        Password = UserPassword.Text
+                                                        Password = UserPassword.Text,
 
                                                     };
                                                     await App.SQLiteDB.guardaUserAsync(Usuario);                //guardar nuevo user 
