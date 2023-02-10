@@ -7,12 +7,11 @@
             xmlns:android="clr-namespace:Xamarin.Forms.PlatformConfiguration.AndroidSpecific;assembly=Xamarin.Forms.Core"
             android:TabbedPage.ToolbarPlacement="Bottom">
     <!--Pages can be added as references or inline-->
-    
-    
-    <tabbed:TabSCADA IconImageSource="desktop" Title="SCADA"/>
-    
-    <Paginas:MantenimientoPage IconImageSource="mantenimiento" Title="MANTENIMIENTO"/>
-    <Paginas:PuertasPage IconImageSource="gate" Title="PUERTAS"/>
-    <Paginas:cctvPage IconImageSource="cctv" Title="CCTV"/>
+
+
+    <tabbed:TabSCADA x:Name="scada" IconImageSource="desktop" Title="SCADA" IsEnabled="False" IsVisible="false"/>
+    <Paginas:MantenimientoPage x:Name="mantenimiento" IconImageSource="mantenimiento" Title="MANTENIMIENTO"  IsEnabled="False" IsVisible="false"/>
+    <Paginas:PuertasPage x:Name="puerta" IconImageSource="gate" Title="PUERTAS"  IsEnabled="False" IsVisible="false"/>
+    <Paginas:cctvPage x:Name="cctv" IconImageSource="cctv" Title="CCTV"  IsEnabled="False" IsVisible="false"/>
 
 </TabbedPage>

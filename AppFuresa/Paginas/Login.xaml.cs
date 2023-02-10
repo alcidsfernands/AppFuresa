@@ -15,6 +15,7 @@ namespace AppFuresa.Paginas
     public partial class Login : ContentPage
     {
         Modelos.user Usuario;
+        public string nivelUser;
         
         public Login()
         {
@@ -37,6 +38,7 @@ namespace AppFuresa.Paginas
                 String queryCommand = $"select * from dbo.USUARIO where Username like '{UserId.Text}' AND Contrasena like '{UserPassword.Text}' ";
                 SqlCommand command = new SqlCommand(queryCommand, cnn);
 
+
                 using (SqlDataReader reader = command.ExecuteReader())
                 {
                     if (reader.HasRows)
@@ -45,6 +47,8 @@ namespace AppFuresa.Paginas
                         {
                             if (reader.HasRows)
                             {
+                                nivelUser = reader["Tipo"].ToString();
+
                                 DisplayAlert("Aviso", "Aceso permitido", "OK");
 
                                 if (Guardar_user.IsChecked)

@@ -11,7 +11,7 @@ namespace AppFuresa.Paginas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class QrCode : ContentPage
     {
-        public string valor;
+        public string QrString;
         private static QrCode instance = new QrCode();
         public QrCode()
         {
@@ -19,9 +19,11 @@ namespace AppFuresa.Paginas
             zxing.OnScanResult += (result) => Device.BeginInvokeOnMainThread(() =>
             {
                 lblResult.Text = result.Text;
-                 valor = result.Text; 
-                MantenimientoPage md = new MantenimientoPage();
-                md.buscaQR(result.Text);
+                 QrString = result.Text;
+                var _navigation = Application.Current.MainPage.Navigation;
+                _navigation.PopModalAsync();
+
+
 
             });
         }

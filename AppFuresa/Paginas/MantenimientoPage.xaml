@@ -14,8 +14,8 @@
                    FontSize="Small"
                    VerticalOptions="StartAndExpand" SearchButtonPressed="Button_Clicked_1"/>
                 <Label x:Name="ResultQrCode" HorizontalOptions="CenterAndExpand"/>
-                <Button Text="QRcode Scanner" Clicked="Button_Clicked" CornerRadius="20" WidthRequest="80" HeightRequest="40" Margin="20" VerticalOptions="Start"/>
-                <Button Text="BUSCAR" Clicked="Button_Clicked_1" CornerRadius="20" WidthRequest="80" HeightRequest="40" Margin="20" VerticalOptions="Start"/>
+                <Button Text="QRcode Scanner" Clicked="Button_Clicked" CornerRadius="20" WidthRequest="80" HeightRequest="40" Margin="10" VerticalOptions="Start"/>
+                <Button Text="BUSCAR" Clicked="Button_Clicked_1" CornerRadius="20" WidthRequest="80" HeightRequest="40" Margin="10" VerticalOptions="Start"/>
 
 
                 <ListView x:Name="MylistView" HasUnevenRows="True" Footer="">

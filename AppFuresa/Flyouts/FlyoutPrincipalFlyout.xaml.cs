@@ -38,6 +38,8 @@ namespace AppFuresa.Flyouts
                     SQLiteAsyncConnection db = new SQLiteAsyncConnection(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "Usuario.db2"));  //busca en este ruta
                     int del = await App.SQLiteDB.BorrarUserAll();   // metodo para borrar la tabla de user
                     db.CreateTableAsync<user>().Wait();  // depues de borrar la tabla, se crea una nueva tabla con mismo nombre
+
+                    System.Diagnostics.Process.GetCurrentProcess().CloseMainWindow();
                 }
                 catch (Exception)
                 {

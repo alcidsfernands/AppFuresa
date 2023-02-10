@@ -5,20 +5,17 @@
              xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms">
     <ContentPage.Content >
         <ScrollView Orientation="Horizontal">
+            
+            
             <StackLayout Orientation="Horizontal">
-                
-                <!--
-                <ListView x:Name="ListServerView" HasUnevenRows="True" ItemSelected="ListServerView_ItemSelected">
+                <ListView x:Name="ListServerView" HasUnevenRows="True">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <ScrollView Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding Nome}" Margin="10" HorizontalOptions="CenterAndExpand"/>
-                                        <Label Text="{Binding IP}" Margin="10" HorizontalOptions="CenterAndExpand"/>
-                                        <Label Text="{Binding Tipo}" Margin="10" HorizontalOptions="CenterAndExpand"/>
-
-
+                                        <Label Text="{Binding IP}"  HorizontalOptions="CenterAndExpand"/>
+                                        <Button x:Name="btn" Text="{Binding Nome}" Clicked="btn_Clicked" />
                                     </StackLayout>
 
                                 </ScrollView>
@@ -27,9 +24,11 @@
                     </ListView.ItemTemplate>
 
                 </ListView>
-                -->
-                
-                <shared:VideoView Margin="20" x:Name="VideoView0" WidthRequest="400"/>
+
+                    <shared:VideoView Margin="20" x:Name="VideoView0" WidthRequest="400"/>
+
+
+                    <!--
                 <shared:VideoView Margin="20" x:Name="VideoView1" WidthRequest="400"/>
                 <shared:VideoView Margin="20" x:Name="VideoView2" WidthRequest="400"/>
                 <shared:VideoView Margin="20" x:Name="VideoView3" WidthRequest="400"/>
@@ -48,8 +47,11 @@
                 <shared:VideoView Margin="20"  x:Name="VideoView16" WidthRequest="400" />
                 <shared:VideoView Margin="20" x:Name="VideoView17" WidthRequest="400" />
                 <shared:VideoView Margin="20" x:Name="VideoView18" WidthRequest="410"/>
-   
+     -->
+
+
             </StackLayout>
+           
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

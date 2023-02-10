@@ -12,23 +12,23 @@ namespace AppFuresa.Paginas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MantenimientoPage : ContentPage
     {
+        QrCode qrcode_Instance=new QrCode();
         public MantenimientoPage()
         {
             InitializeComponent();
         }
+
+        protected override  void OnAppearing()
+        {
+            buscarbar.Text = qrcode_Instance.QrString;
+            base.OnAppearing();
+
+        }
         async void Button_Clicked(object sender, EventArgs e)
         {
-
-            await Navigation.PushModalAsync(new QrCode());
-            var nada = QrCode.Instance;
-            
-
+            await Navigation.PushModalAsync( qrcode_Instance);
         }
-        public void buscaQR(string buscar)
-        {
-            string vd = buscar;
-            ResultQrCode.Text = buscar;
-        }
+   
 
         private void Button_Clicked_1(object sender, EventArgs e)
         {

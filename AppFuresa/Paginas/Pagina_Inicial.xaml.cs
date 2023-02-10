@@ -12,6 +12,7 @@ namespace AppFuresa.Paginas
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Pagina_Inicial : ContentPage
     {
+        public static Login LOGIN=new Login(); 
         public Pagina_Inicial()
         {
             InitializeComponent();
@@ -22,8 +23,8 @@ namespace AppFuresa.Paginas
         {
             try
             {
-                await Task.Delay(2000);
-                await Navigation.PushModalAsync(new NavigationPage(new Login()));
+                await Task.Delay(1000);
+                await Navigation.PushModalAsync(new NavigationPage(LOGIN));
                 base.OnAppearing();
             }
             catch (Exception)
