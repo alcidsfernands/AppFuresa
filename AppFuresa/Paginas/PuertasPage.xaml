@@ -42,7 +42,7 @@
                 <StackLayout>
                     <Label WidthRequest="410" Background="black" Opacity="0.5" Text="PUERTA BASCULA" TextColor="White" HorizontalTextAlignment="Center" FontSize="Large"/>
                    <!-- <shared:VideoView x:Name="CamPuertaBascula" WidthRequest="150" HeightRequest="250"/>  -->
-                    <Button x:Name="btn_conectarBascula" Text="CONECTAR" Clicked="btn_conectarBascula_Clicked"/>
+                  <Button x:Name="btn_conectarBascula" Text="CONECTAR" Clicked="btn_conectarBascula_Clicked"/>
                     <Button x:Name="btn_AbrirPuertaBascula" Text="Abrir/Cerrar puerta" Clicked="btn_AbrirPuertaBascula_Clicked"/>
                 </StackLayout>
             </StackLayout>

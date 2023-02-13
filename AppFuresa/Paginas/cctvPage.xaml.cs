@@ -169,28 +169,33 @@ namespace AppFuresa.Paginas
 
         private async void btn_Clicked(object sender, EventArgs e)
         {
-            
             Button btn = sender as Button;
-           // btn.BackgroundColor = Color.Gray;
             string VIDEO_URL0 = "";
             string VIDEO_URL1 = "";
-            string btn_text=btn.Text;
-            foreach (var item in DatosLista)
-            {
-                if (item.Name == btn_text)
+            string btn_text = btn.Text;
+            bool answer = await DisplayAlert("ABRIR CAM", "Elige donde quieres abrir el video", "Aplicación", "Web");
+           
+          
+                foreach (var item in DatosLista)
                 {
-                    VIDEO_URL0 = "rtsp://" + item.Username + ":" + item.Password + "@" + item.IP + ":554/live1.sdp";
-                    VIDEO_URL1 = "http://"+item.IP;
-                    using (var media = new Media(_libvlc, new Uri(VIDEO_URL0)))            
-                        VideoView0.MediaPlayer.Play(media);
-                      //await Browser.OpenAsync(new Uri(VIDEO_URL1));
-                    // btn.BackgroundColor = Color.Gold;
-                    //Device.OpenUri(new Uri("http://example.com"))
+                    if (item.Name == btn_text)
+                    {
+                        VIDEO_URL0 = "rtsp://" + item.Username + ":" + item.Password + "@" + item.IP + ":554/live1.sdp";
+                        VIDEO_URL1 = "http://" + item.IP;
+                         if (answer)
+                            {
+                             using (var media = new Media(_libvlc, new Uri(VIDEO_URL0)))
+                                VideoView0.MediaPlayer.Play(media);
+
+                            }
+                          else await Browser.OpenAsync(new Uri(VIDEO_URL1));
+
                     break;
-                }  
-            }
- 
-            
+                    }
+                }
+           
+          
+
 
         }
     }

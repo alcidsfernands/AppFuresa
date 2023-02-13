@@ -14,8 +14,8 @@
                             <ViewCell>
                                 <ScrollView Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal">
-                                        <Label Text="{Binding IP}"  HorizontalOptions="CenterAndExpand"/>
-                                        <Button x:Name="btn" Text="{Binding Nome}" Clicked="btn_Clicked" />
+                                        <Label Text="{Binding IP}"  HorizontalOptions="CenterAndExpand" VerticalOptions="Center"/>
+                                        <Button x:Name="btn" Text="{Binding Nome}" Clicked="btn_Clicked" WidthRequest="200" />
                                     </StackLayout>
 
                                 </ScrollView>
