@@ -2,7 +2,8 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="AppFuresa.Paginas.PuertasPage"
-             xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms">
+             xmlns:shared="clr-namespace:LibVLCSharp.Forms.Shared;assembly=LibVLCSharp.Forms"
+             Background="black">
     <ContentPage.Content>
         <ScrollView Orientation="Horizontal">
             <StackLayout Orientation="Horizontal">
@@ -19,23 +20,23 @@
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Button x:Name="Led_PuertaEntradaAbierta"  CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
-                        <Label Text="Puerta Abierta"/>
+                        <Label Text="Puerta Abierta" TextColor="Gold"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Button x:Name="Led_PuertaCerrada" CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
-                        <Label Text="Puerta Cerrada"/>
+                        <Label Text="Puerta Cerrada" TextColor="Gold"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Button x:Name="Led_PuertaEntradaAbriendose"  CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
-                        <Label Text="Puerta Abriendose"/>
+                        <Label Text="Puerta Abriendose" TextColor="Gold"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Button x:Name="Led_PuertaCerrandose" CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
-                        <Label Text="Puerta Cerrandose"/>
+                        <Label Text="Puerta Cerrandose" TextColor="Gold"/>
                     </StackLayout>
                     <StackLayout Orientation="Horizontal">
                         <Button x:Name="Led_PuertaSensor" CornerRadius="30" WidthRequest="20" HeightRequest="20"/>
-                        <Label Text="Sensor Optico"/>
+                        <Label Text="Sensor Optico" TextColor="Gold"/>
                     </StackLayout>
 
                 </StackLayout>

@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:AppFuresa"
              xmlns:Flyou="clr-namespace:AppFuresa.Flyouts"
              xmlns:Pages="clr-namespace:AppFuresa.Paginas"
-             xmlns:Modelo="clr-namespace:AppFuresa.Modelos">
+             xmlns:Modelo="clr-namespace:AppFuresa.Modelos"
+             Background="black">
     
     <StackLayout>
         <ListView x:Name="listView" x:FieldModifier="public" ItemSelected="listView_ItemSelected">
